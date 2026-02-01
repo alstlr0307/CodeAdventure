@@ -85,16 +85,16 @@
 
 ```mermaid
 flowchart TB
-  U[User] --> FE[Frontend (React/CRA)]
-  FE -->|REST + credentials| BE[Backend (Node/Express)]
-  BE --> DB[(MySQL)]
-  BE --> SS[(MySQL Session Store)]
+  U[User] --> FE[Frontend React CRA]
+  FE -->|REST + credentials| BE[Backend Node Express]
+  BE --> DB[MySQL]
+  BE --> SS[MySQL Session Store]
 
   subgraph Domain
-    BE --> A[Auth/Session]
-    BE --> Q[Stage/Quiz]
-    BE --> S[Shop/Hint]
-    BE --> M[Manager/Admin]
+    BE --> A[Auth Session]
+    BE --> Q[Stage Quiz]
+    BE --> S[Shop Hint]
+    BE --> M[Manager Admin]
   end
 ```
 
